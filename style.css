@@ -508,6 +508,13 @@ img {
   margin-bottom: 18px;
 }
 
+.exp-meta {
+  font-size: 0.78rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+  font-family: var(--font-mono);
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
