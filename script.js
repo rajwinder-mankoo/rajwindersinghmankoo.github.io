@@ -119,27 +119,3 @@
   sections.forEach(s => observer.observe(s));
 }());
 
-/* ── Contact form: basic client-side feedback ─────────────── */
-(function () {
-  const form = document.getElementById('contactForm');
-  if (!form) return;
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Message sent!';
-    btn.setAttribute('aria-label', 'Message sent successfully');
-    btn.disabled = true;
-    btn.style.background = '#00ff88';
-    btn.style.color = '#0a0e17';
-    // Reset after 3 s
-    setTimeout(() => {
-      btn.textContent = 'Send Message';
-      btn.removeAttribute('aria-label');
-      btn.disabled = false;
-      btn.style.background = '';
-      btn.style.color = '';
-      form.reset();
-    }, 3000);
-  });
-}());
