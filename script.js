@@ -39,7 +39,7 @@
   const phrases = [
     'Cybersecurity | Red Team Labs | Offensive Security',
     'Penetration Testing | CTF Builder and Competitor | Homelab Enthusiast',
-    'Breaking things to make them better.',
+    'Breaking things responsibly.',
   ];
 
   let phraseIdx = 0;
