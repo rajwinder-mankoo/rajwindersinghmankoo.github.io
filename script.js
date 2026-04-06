@@ -37,8 +37,8 @@
   if (!el) return;
 
   const phrases = [
-    'Cybersecurity | Red Team | Offensive Security',
-    'Penetration Testing | CTFs | Homelabs',
+    'Cybersecurity | Red Team Labs | Offensive Security',
+    'Penetration Testing | CTF Builder and Competitor | Homelab Enthusiast',
     'Breaking things to make them better.',
   ];
 
