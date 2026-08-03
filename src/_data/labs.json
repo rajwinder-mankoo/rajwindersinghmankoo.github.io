@@ -1,62 +1,94 @@
 [
   {
     "id": "project-00",
-    "name": "Project 00 — Enterprise Homelab Foundation",
-    "icon": "🏗️",
+    "name": "Project 00 \u2014 Enterprise Homelab Foundation",
+    "icon": "\ud83c\udfd7\ufe0f",
     "status": "Foundation Stable",
     "statusClass": "status-active",
-    "description": "Enterprise network architecture, VLAN segmentation, naming conventions, virtualization standards, and a documented security baseline for the whole c0mpl1cated.labs environment — the foundation every other project builds on.",
-    "tags": ["Proxmox", "Networking", "VLANs", "Documentation"],
-    "repo": null
+    "description": "Enterprise network architecture, VLAN segmentation, naming conventions, virtualization standards, and a documented security baseline for the whole c0mpl1cated.labs environment \u2014 the foundation every other project builds on.",
+    "tags": [
+      "Proxmox",
+      "Networking",
+      "VLANs",
+      "Documentation"
+    ],
+    "repo": null,
+    "writeup": null
   },
   {
     "id": "project-01",
-    "name": "Project 01 — Wazuh SIEM",
-    "icon": "🛡️",
+    "name": "Project 01 \u2014 Wazuh SIEM",
+    "icon": "\ud83d\udee1\ufe0f",
     "status": "Core Objective Achieved",
     "statusClass": "status-complete",
-    "description": "Single-node Wazuh SIEM — manager, indexer, and dashboard — with live agent-based log ingestion. Validated end-to-end: real events, real MITRE ATT&CK technique mapping, no custom rule authoring required to get useful signal out of the box.",
-    "tags": ["Wazuh", "SIEM", "Log Ingestion", "MITRE ATT&CK"],
-    "repo": null
+    "description": "Single-node Wazuh SIEM \u2014 manager, indexer, and dashboard \u2014 with live agent-based log ingestion. Validated end-to-end: real events, real MITRE ATT&CK technique mapping, no custom rule authoring required to get useful signal out of the box.",
+    "tags": [
+      "Wazuh",
+      "SIEM",
+      "Log Ingestion",
+      "MITRE ATT&CK"
+    ],
+    "repo": null,
+    "writeup": "/writeups/project-01-wazuh-siem/"
   },
   {
     "id": "project-02",
-    "name": "Project 02 — Active Directory",
-    "icon": "🏢",
+    "name": "Project 02 \u2014 Active Directory",
+    "icon": "\ud83c\udfe2",
     "status": "Not Started",
     "statusClass": "status-pending",
-    "description": "Enterprise Active Directory domain — domain controller, member servers, group policy — providing realistic Windows infrastructure and log sources for the detection engineering work that follows.",
-    "tags": ["Active Directory", "Windows Server", "Group Policy"],
-    "repo": null
+    "description": "Enterprise Active Directory domain \u2014 domain controller, member servers, group policy \u2014 providing realistic Windows infrastructure and log sources for the detection engineering work that follows.",
+    "tags": [
+      "Active Directory",
+      "Windows Server",
+      "Group Policy"
+    ],
+    "repo": null,
+    "writeup": null
   },
   {
     "id": "project-03",
-    "name": "Project 03 — Sigma Detection Engineering",
-    "icon": "🎯",
+    "name": "Project 03 \u2014 Sigma Detection Engineering",
+    "icon": "\ud83c\udfaf",
     "status": "Not Started",
     "statusClass": "status-pending",
-    "description": "Custom Sigma detection rules authored against real log data from Project 01's SIEM — the detection engineering layer of the portfolio.",
-    "tags": ["Sigma", "Detection Engineering", "Threat Hunting"],
-    "repo": null
+    "description": "Custom Sigma detection rules authored against real log data from Project 01's SIEM \u2014 the detection engineering layer of the portfolio.",
+    "tags": [
+      "Sigma",
+      "Detection Engineering",
+      "Threat Hunting"
+    ],
+    "repo": null,
+    "writeup": null
   },
   {
     "id": "project-04",
-    "name": "Project 04 — Velociraptor DFIR",
-    "icon": "🔍",
+    "name": "Project 04 \u2014 Velociraptor DFIR",
+    "icon": "\ud83d\udd0d",
     "status": "Not Started",
     "statusClass": "status-pending",
     "description": "Digital forensics and incident response tooling built on Velociraptor, correlating with SIEM data and detection alerts for full investigative workflows.",
-    "tags": ["Velociraptor", "DFIR", "Forensics"],
-    "repo": null
+    "tags": [
+      "Velociraptor",
+      "DFIR",
+      "Forensics"
+    ],
+    "repo": null,
+    "writeup": null
   },
   {
     "id": "project-05",
-    "name": "Project 05 — AI-Assisted SOC",
-    "icon": "🤖",
+    "name": "Project 05 \u2014 AI-Assisted SOC",
+    "icon": "\ud83e\udd16",
     "status": "Not Started",
     "statusClass": "status-pending",
-    "description": "An AI-assisted layer over the SOC stack — triage support and analysis assistance built on the detection and DFIR tooling from earlier projects. Capstone of the series.",
-    "tags": ["AI/ML", "SOC Automation", "Capstone"],
-    "repo": null
+    "description": "An AI-assisted layer over the SOC stack \u2014 triage support and analysis assistance built on the detection and DFIR tooling from earlier projects. Capstone of the series.",
+    "tags": [
+      "AI/ML",
+      "SOC Automation",
+      "Capstone"
+    ],
+    "repo": null,
+    "writeup": null
   }
 ]

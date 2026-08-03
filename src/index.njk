@@ -22,11 +22,13 @@
 
     <ul class="nav-links" id="navLinks" role="list">
       <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#labs">Labs</a></li>
       <li><a href="#writeups">Writeups</a></li>
       <li><a href="#certs">Certs</a></li>
+      <li><a href="#achievements">Achievements</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -140,6 +142,35 @@
 </section>
 
 <!-- ══════════════════════════════════════════════
+     EDUCATION
+     ══════════════════════════════════════════════ -->
+<section id="education" class="section" aria-labelledby="education-title">
+  <div class="container">
+    <h2 class="section-title" id="education-title">education</h2>
+    <p class="section-subtitle">Current degree program.</p>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-icon" aria-hidden="true">🎓</span>
+          <h3>Southern Utah University</h3>
+        </div>
+        <p class="exp-meta">Bachelor of Science — Cybersecurity &nbsp;|&nbsp; Aug 2023 – Apr 2027 · Cedar City, UT</p>
+        <p>
+          Minoring in Computer Science, with coursework spanning security fundamentals,
+          networking, and systems administration — applied directly in the c0mpl1cated.labs
+          homelab series and the IT Help Desk role above.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Cybersecurity</span>
+          <span class="project-tag">Computer Science Minor</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
      EXPERIENCE
      ══════════════════════════════════════════════ -->
 <section id="experience" class="section" aria-labelledby="experience-title">
@@ -150,14 +181,61 @@
     <div class="projects-grid">
       <article class="project-card reveal">
         <div class="project-top">
-          <span class="project-icon" aria-hidden="true">🎓</span>
-          <h3>Admissions Processing Assistant</h3>
+          <span class="project-icon" aria-hidden="true">🖥️</span>
+          <h3>Student IT Help Desk Technician</h3>
         </div>
-        <p class="exp-meta">Southern Utah University · Part-time &nbsp;|&nbsp; Dec 2025 – Present · Cedar City, UT</p>
+        <p class="exp-meta">Southern Utah University · Part-time &nbsp;|&nbsp; Jul 2026 – Present · Cedar City, UT</p>
         <p>
-          Support the full admissions lifecycle for prospective graduate and online
-          students within SUU's Enrollment Management Department. Process application
-          materials, conduct outbound outreach, and maintain student records using
+          Provide first-level IT support to students, faculty, and staff for hardware,
+          software, and network-related issues. Troubleshoot Windows, macOS, Microsoft 365,
+          printers, Wi-Fi, and peripheral devices through phone, email, and in-person support.
+          Document and manage support requests via the university's IT ticketing system, and
+          assist with device setup, deployment, and imaging alongside other IT teams.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Windows</span>
+          <span class="project-tag">macOS</span>
+          <span class="project-tag">Microsoft 365</span>
+          <span class="project-tag">Networking</span>
+          <span class="project-tag">Help Desk Support</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-icon" aria-hidden="true">🚩</span>
+          <h3>BSidesSLC — CTF Challenge Developer</h3>
+        </div>
+        <p class="exp-meta">BSides Salt Lake City · Remote/On-site &nbsp;|&nbsp; Nov 2024 – Present · Utah</p>
+        <p>
+          Started as an event volunteer at regional BSides conferences (BSides Salt Lake City,
+          BSides RedRocks) — setup, teardown, and coordination — and progressed into building
+          CTF challenges for the team. Designed scenarios across DFIR, packet analysis, OSINT,
+          and blue team categories, grounded in real-world attack and incident response
+          patterns, including challenge logic and flag validation to keep everything stable
+          during live competition.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">CTF Design</span>
+          <span class="project-tag">DFIR</span>
+          <span class="project-tag">Packet Analysis</span>
+          <span class="project-tag">OSINT</span>
+          <span class="project-tag">Blue Team</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-icon" aria-hidden="true">🎓</span>
+          <h3>Admissions Mentor</h3>
+        </div>
+        <p class="exp-meta">Southern Utah University · Part-time &nbsp;|&nbsp; Dec 2025 – Jul 2026 · Cedar City, UT</p>
+        <p>
+          Supported the full admissions lifecycle for prospective and current graduate and
+          online students within SUU's Enrollment Management Department, serving as a
+          university ambassador in a high-engagement, professional environment. Processed
+          application materials against university, state, and federal compliance
+          requirements, conducted outbound outreach, and maintained student records across
           Banner, CRM Slate, Google Workspace, and Slack.
         </p>
         <div class="project-tags">
@@ -323,6 +401,9 @@
         {% if lab.repo %}
         <a href="{{ lab.repo }}" class="project-link" target="_blank" rel="noopener noreferrer">View repo →</a>
         {% endif %}
+        {% if lab.writeup %}
+        <a href="{{ lab.writeup }}" class="project-link">Read writeup →</a>
+        {% endif %}
       </article>
       {% endfor %}
     </div>
@@ -369,12 +450,12 @@
 </section>
 
 <!-- ══════════════════════════════════════════════
-     CERTIFICATIONS & ACHIEVEMENTS
+     CERTIFICATIONS
      ══════════════════════════════════════════════ -->
 <section id="certs" class="section" aria-labelledby="certs-title">
   <div class="container">
-    <h2 class="section-title" id="certs-title">certs_&amp;_achievements</h2>
-    <p class="section-subtitle">Credentials and competition results.</p>
+    <h2 class="section-title" id="certs-title">certifications</h2>
+    <p class="section-subtitle">Credentials and completed coursework.</p>
 
     <div class="certs-grid">
       <article class="cert-card reveal">
@@ -409,15 +490,12 @@
           <div class="cert-org">The SecOps Group &nbsp;·&nbsp; Dec 2025</div>
         </div>
       </article>
-      <!-- TODO: ISC2 CC (Certified in Cybersecurity) — in the project charter but no
-           completion date confirmed yet. Add here once confirmed. Carried over from
-           ADR-WEB-001's original open item, not resolved by this rebuild. -->
       <article class="cert-card reveal">
-        <div class="cert-badge" aria-hidden="true">⚡</div>
+        <div class="cert-badge" aria-hidden="true">🔐</div>
         <div class="cert-info">
-          <h3>TryHackMe</h3>
-          <div class="cert-detail">Top 4% &nbsp;·&nbsp; Intro to Cyber Security</div>
-          <div class="cert-org">TryHackMe Platform &nbsp;·&nbsp; Apr 2024</div>
+          <h3>ISC2 CC</h3>
+          <div class="cert-detail">Certified in Cybersecurity</div>
+          <div class="cert-org">ISC2 &nbsp;·&nbsp; Jun 2026</div>
         </div>
       </article>
       <article class="cert-card reveal">
@@ -426,6 +504,35 @@
           <h3>Python (Basic)</h3>
           <div class="cert-detail">Certified</div>
           <div class="cert-org">HackerRank &nbsp;·&nbsp; Feb 2022</div>
+        </div>
+      </article>
+      <article class="cert-card reveal">
+        <div class="cert-badge" aria-hidden="true">🔰</div>
+        <div class="cert-info">
+          <h3>Introduction to Cyber Security</h3>
+          <div class="cert-detail">Certified</div>
+          <div class="cert-org">TryHackMe &nbsp;·&nbsp; Apr 2024</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     ACHIEVEMENTS
+     ══════════════════════════════════════════════ -->
+<section id="achievements" class="section" aria-labelledby="achievements-title">
+  <div class="container">
+    <h2 class="section-title" id="achievements-title">achievements</h2>
+    <p class="section-subtitle">Competition results and rankings.</p>
+
+    <div class="certs-grid">
+      <article class="cert-card reveal">
+        <div class="cert-badge" aria-hidden="true">⚡</div>
+        <div class="cert-info">
+          <h3>TryHackMe</h3>
+          <div class="cert-detail">Top 3% Platform Ranking</div>
+          <div class="cert-org">TryHackMe Platform</div>
         </div>
       </article>
       <article class="cert-card reveal">
