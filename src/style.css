@@ -800,3 +800,29 @@ footer p span {
     text-align: center;
   }
 }
+
+/* ── Lab status badges (added during Eleventy migration) ──── */
+.status-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+.status-complete {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(0, 255, 136, 0.08);
+}
+.status-active {
+  color: var(--accent2);
+  border-color: var(--accent2);
+  background: rgba(0, 200, 255, 0.08);
+}
+.status-pending {
+  color: var(--text-dim);
+  border-color: var(--border);
+}

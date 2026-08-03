@@ -1,0 +1,62 @@
+[
+  {
+    "id": "project-00",
+    "name": "Project 00 — Enterprise Homelab Foundation",
+    "icon": "🏗️",
+    "status": "Foundation Stable",
+    "statusClass": "status-active",
+    "description": "Enterprise network architecture, VLAN segmentation, naming conventions, virtualization standards, and a documented security baseline for the whole c0mpl1cated.labs environment — the foundation every other project builds on.",
+    "tags": ["Proxmox", "Networking", "VLANs", "Documentation"],
+    "repo": null
+  },
+  {
+    "id": "project-01",
+    "name": "Project 01 — Wazuh SIEM",
+    "icon": "🛡️",
+    "status": "Core Objective Achieved",
+    "statusClass": "status-complete",
+    "description": "Single-node Wazuh SIEM — manager, indexer, and dashboard — with live agent-based log ingestion. Validated end-to-end: real events, real MITRE ATT&CK technique mapping, no custom rule authoring required to get useful signal out of the box.",
+    "tags": ["Wazuh", "SIEM", "Log Ingestion", "MITRE ATT&CK"],
+    "repo": null
+  },
+  {
+    "id": "project-02",
+    "name": "Project 02 — Active Directory",
+    "icon": "🏢",
+    "status": "Not Started",
+    "statusClass": "status-pending",
+    "description": "Enterprise Active Directory domain — domain controller, member servers, group policy — providing realistic Windows infrastructure and log sources for the detection engineering work that follows.",
+    "tags": ["Active Directory", "Windows Server", "Group Policy"],
+    "repo": null
+  },
+  {
+    "id": "project-03",
+    "name": "Project 03 — Sigma Detection Engineering",
+    "icon": "🎯",
+    "status": "Not Started",
+    "statusClass": "status-pending",
+    "description": "Custom Sigma detection rules authored against real log data from Project 01's SIEM — the detection engineering layer of the portfolio.",
+    "tags": ["Sigma", "Detection Engineering", "Threat Hunting"],
+    "repo": null
+  },
+  {
+    "id": "project-04",
+    "name": "Project 04 — Velociraptor DFIR",
+    "icon": "🔍",
+    "status": "Not Started",
+    "statusClass": "status-pending",
+    "description": "Digital forensics and incident response tooling built on Velociraptor, correlating with SIEM data and detection alerts for full investigative workflows.",
+    "tags": ["Velociraptor", "DFIR", "Forensics"],
+    "repo": null
+  },
+  {
+    "id": "project-05",
+    "name": "Project 05 — AI-Assisted SOC",
+    "icon": "🤖",
+    "status": "Not Started",
+    "statusClass": "status-pending",
+    "description": "An AI-assisted layer over the SOC stack — triage support and analysis assistance built on the detection and DFIR tooling from earlier projects. Capstone of the series.",
+    "tags": ["AI/ML", "SOC Automation", "Capstone"],
+    "repo": null
+  }
+]

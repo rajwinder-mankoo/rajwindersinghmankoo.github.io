@@ -36,11 +36,17 @@
   const cursor = document.querySelector('.cursor');
   if (!el) return;
 
-  const phrases = [
-    'Cybersecurity | Red Team Labs | Offensive Security',
-    'Penetration Testing | CTF Builder and Competitor | Homelab Enthusiast',
-    'Breaking things responsibly.',
-  ];
+  // Phrases come from _data/site.json via the data-phrases attribute rendered
+  // into the template — this element is the single source of truth for hero
+  // copy, not a hardcoded array here. Fallback covers the case where the
+  // attribute is missing or malformed, so the page never breaks silently.
+  let phrases;
+  try {
+    phrases = JSON.parse(el.dataset.phrases || '[]');
+    if (!Array.isArray(phrases) || phrases.length === 0) throw new Error('empty');
+  } catch (e) {
+    phrases = ['Detection Engineer.', 'Purple Team Operator.'];
+  }
 
   let phraseIdx = 0;
   let charIdx   = 0;
