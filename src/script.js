@@ -1,5 +1,5 @@
 /* ============================================================
-   script.js — Portfolio: Rajwinder Singh Mankoo
+   script.js - Portfolio: Rajwinder Singh Mankoo
    ============================================================ */
 
 /* ── Navbar: shrink on scroll & mobile toggle ─────────────── */
@@ -37,7 +37,7 @@
   if (!el) return;
 
   // Phrases come from _data/site.json via the data-phrases attribute rendered
-  // into the template — this element is the single source of truth for hero
+  // into the template: this element is the single source of truth for hero
   // copy, not a hardcoded array here. Fallback covers the case where the
   // attribute is missing or malformed, so the page never breaks silently.
   let phrases;
@@ -46,6 +46,12 @@
     if (!Array.isArray(phrases) || phrases.length === 0) throw new Error('empty');
   } catch (e) {
     phrases = ['Detection Engineer.', 'Purple Team Operator.'];
+  }
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) {
+    el.textContent = phrases[0];
+    return;
   }
 
   let phraseIdx = 0;

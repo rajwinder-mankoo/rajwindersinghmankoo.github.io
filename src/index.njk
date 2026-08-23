@@ -5,13 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="{{ site.metaDescription }}" />
 <meta name="author" content="{{ site.name }}" />
+<link rel="canonical" href="https://rajwindersinghmankoo.dev/" />
 <title>{{ site.pageTitle }}</title>
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ site.pageTitle }}" />
+<meta property="og:description" content="{{ site.metaDescription }}" />
+<meta property="og:url" content="https://rajwindersinghmankoo.dev/" />
+<meta property="og:image" content="https://rajwindersinghmankoo.dev/assets/favicon.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ site.pageTitle }}" />
+<meta name="twitter:description" content="{{ site.metaDescription }}" />
+<meta name="twitter:image" content="https://rajwindersinghmankoo.dev/assets/favicon.png" />
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
 <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- ══════════════════════════════════════════════
      NAVBAR
@@ -24,6 +44,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#labs">Labs</a></li>
       <li><a href="#writeups">Writeups</a></li>
@@ -38,7 +59,7 @@
   </div>
 </nav>
 
-<main>
+<main id="main">
 
 <!-- ══════════════════════════════════════════════
      HERO
@@ -84,9 +105,9 @@
           online students.
         </p>
         <p>
-          I'm building <strong>c0mpl1cated.labs</strong> — a six-project enterprise
+          I'm building <strong>c0mpl1cated.labs</strong>, a six-project enterprise
           homelab series covering infrastructure, SIEM deployment, detection
-          engineering, DFIR, and AI-assisted analysis — while practising
+          engineering, DFIR, and AI-assisted analysis, while practising
           purple-team methodology and competing in CTFs.
         </p>
         <p>
@@ -97,8 +118,8 @@
         </p>
         <p>
           My long-term goal is to work as a <strong>detection engineer or purple
-          team operator</strong> — using offensive security fundamentals to build
-          better defenses, not just to break things.
+          team operator</strong>, using offensive security fundamentals to build
+          better defenses instead of just breaking things.
         </p>
 
         <div class="about-interests">
@@ -155,10 +176,10 @@
           <span class="project-icon" aria-hidden="true">🎓</span>
           <h3>Southern Utah University</h3>
         </div>
-        <p class="exp-meta">Bachelor of Science — Cybersecurity &nbsp;|&nbsp; Aug 2023 – Apr 2027 · Cedar City, UT</p>
+        <p class="exp-meta">Bachelor of Science, Cybersecurity &nbsp;|&nbsp; Aug 2023 – Apr 2027 · Cedar City, UT</p>
         <p>
           Minoring in Computer Science, with coursework spanning security fundamentals,
-          networking, and systems administration — applied directly in the c0mpl1cated.labs
+          networking, and systems administration, applied directly in the c0mpl1cated.labs
           homelab series and the IT Help Desk role above.
         </p>
         <div class="project-tags">
@@ -204,13 +225,13 @@
       <article class="project-card reveal">
         <div class="project-top">
           <span class="project-icon" aria-hidden="true">🚩</span>
-          <h3>BSidesSLC — CTF Challenge Developer</h3>
+          <h3>BSidesSLC: CTF Challenge Developer</h3>
         </div>
         <p class="exp-meta">BSides Salt Lake City · Remote/On-site &nbsp;|&nbsp; Nov 2024 – Present · Utah</p>
         <p>
           Started as an event volunteer at regional BSides conferences (BSides Salt Lake City,
-          BSides RedRocks) — setup, teardown, and coordination — and progressed into building
-          CTF challenges for the team. Designed scenarios across DFIR, packet analysis, OSINT,
+          BSides RedRocks), handling setup, teardown, and coordination, and progressed into
+          building CTF challenges for the team. Designed scenarios across DFIR, packet analysis, OSINT,
           and blue team categories, grounded in real-world attack and incident response
           patterns, including challenge logic and flag validation to keep everything stable
           during live competition.
@@ -249,7 +270,7 @@
       <article class="project-card reveal">
         <div class="project-top">
           <span class="project-icon" aria-hidden="true">📡</span>
-          <h3>Ambassador — OutreachMAD 2.0</h3>
+          <h3>Ambassador: OutreachMAD 2.0</h3>
         </div>
         <p class="exp-meta">Southern Utah University · Part-time &nbsp;|&nbsp; Dec 2023 – Mar 2025 · Cedar City, UT</p>
         <p>
@@ -281,6 +302,40 @@
           <span class="project-tag">Web Development</span>
           <span class="project-tag">Problem Solving</span>
         </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     PUBLICATIONS
+     ══════════════════════════════════════════════ -->
+<section id="publications" class="section" aria-labelledby="publications-title">
+  <div class="container">
+    <h2 class="section-title" id="publications-title">publications</h2>
+    <p class="section-subtitle">Peer-reviewed book chapters.</p>
+
+    <div class="publications-list">
+      <article class="publication-card reveal">
+        <div class="project-top">
+          <span class="project-icon" aria-hidden="true">📄</span>
+          <h3><a href="https://doi.org/10.1007/978-3-032-14778-3_1" target="_blank" rel="noopener noreferrer">Introduction to Emotion Expression and AI</a></h3>
+        </div>
+        <p class="exp-meta">Mankoo, Rajwinder Singh, Shivam Patel, Nikunj Tahilramani, Anantkumar Patil, Aditya Bhadouria, and Shadab Mazhar Roushan</p>
+        <p class="exp-meta">In <em>Emotion and Facial Recognition in Artificial Intelligence: Sustainable Multidisciplinary Perspectives and Applications</em> &nbsp;·&nbsp; Springer &nbsp;·&nbsp; 2026</p>
+        <p>Examines computational approaches to emotion recognition and generation using CNNs, RNNs, and transformer architectures, with emphasis on privacy, algorithmic bias, manipulation, accountability, and responsible AI.</p>
+        <a href="https://doi.org/10.1007/978-3-032-14778-3_1" class="project-link" target="_blank" rel="noopener noreferrer">View chapter →</a>
+      </article>
+
+      <article class="publication-card reveal">
+        <div class="project-top">
+          <span class="project-icon" aria-hidden="true">📄</span>
+          <h3><a href="https://doi.org/10.1515/9783111264349-012" target="_blank" rel="noopener noreferrer">Quantum Blind Computing for Privacy-Preserving Medical Diagnosis</a></h3>
+        </div>
+        <p class="exp-meta">Aseri, Vinay, Arnav Dua, Rajwinder Singh Mankoo, and Harish Chowdhary</p>
+        <p class="exp-meta">Chapter 12, <em>Sustainable Blind Quantum Computing</em> &nbsp;·&nbsp; De Gruyter &nbsp;·&nbsp; 2025</p>
+        <p>Examines quantum blind computing for privacy-preserving medical data processing, including secure computation, quantum protocols, scalability, implementation challenges, and ethical considerations.</p>
+        <a href="https://doi.org/10.1515/9783111264349-012" class="project-link" target="_blank" rel="noopener noreferrer">View chapter →</a>
       </article>
     </div>
   </div>
@@ -377,12 +432,12 @@
 </section>
 
 <!-- ══════════════════════════════════════════════
-     LABS (c0mpl1cated.labs roadmap — data-driven)
+     LABS (c0mpl1cated.labs roadmap, data-driven)
      ══════════════════════════════════════════════ -->
 <section id="labs" class="section" aria-labelledby="labs-title">
   <div class="container">
     <h2 class="section-title" id="labs-title">c0mpl1cated.labs</h2>
-    <p class="section-subtitle">A six-project enterprise homelab series — infrastructure, SIEM, detection engineering, DFIR, and AI-assisted SOC.</p>
+    <p class="section-subtitle">A six-project enterprise homelab series: infrastructure, SIEM, detection engineering, DFIR, and AI-assisted SOC.</p>
 
     <div class="projects-grid">
       {% for lab in labs %}
@@ -458,6 +513,14 @@
     <p class="section-subtitle">Credentials and completed coursework.</p>
 
     <div class="certs-grid">
+      <article class="cert-card reveal">
+        <div class="cert-badge" aria-hidden="true">🔒</div>
+        <div class="cert-info">
+          <h3>Security+</h3>
+          <div class="cert-detail">SY0-701</div>
+          <div class="cert-org">CompTIA &nbsp;·&nbsp; Aug 2026</div>
+        </div>
+      </article>
       <article class="cert-card reveal">
         <div class="cert-badge" aria-hidden="true">🎖️</div>
         <div class="cert-info">
@@ -561,13 +624,13 @@
 <section id="contact" class="section" aria-labelledby="contact-title">
   <div class="container">
     <h2 class="section-title" id="contact-title">contact</h2>
-    <p class="section-subtitle">Get in touch — I'm open to opportunities and collaboration.</p>
+    <p class="section-subtitle">Get in touch. I'm open to opportunities and collaboration.</p>
 
     <div class="contact-text reveal">
       <h3>Let's connect.</h3>
       <p>
         Whether you want to talk about cybersecurity, collaborate on a
-        project, or discuss opportunities — feel free to reach out.
+        project, or discuss opportunities, feel free to reach out.
       </p>
       <address class="contact-links" style="font-style:normal;">
         <a href="mailto:{{ site.email }}" class="contact-link">
@@ -600,7 +663,7 @@
      ══════════════════════════════════════════════ -->
 <footer role="contentinfo">
   <div class="container footer-inner">
-    <p>&copy; <span id="year">2026</span> <span>{{ site.name }}</span> — Built with Eleventy</p>
+    <p>&copy; <span id="year">2026</span> <span>{{ site.name }}</span> · Built with Eleventy</p>
     <nav class="footer-links" aria-label="Footer navigation">
       <a href="#hero">Home</a>
       <a href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
