@@ -1,0 +1,181 @@
+{
+  "experience": [
+    {
+      "title": "Student IT Help Desk Technician",
+      "meta": "Southern Utah University · Part-time | Jul 2026 – Present · Cedar City, UT",
+      "description": "Provide first-level IT support to students, faculty, and staff for hardware, software, and network-related issues. Troubleshoot Windows, macOS, Microsoft 365, printers, Wi-Fi, and peripheral devices through phone, email, and in-person support. Document and manage support requests via the university's IT ticketing system, and assist with device setup, deployment, and imaging alongside other IT teams.",
+      "tags": [
+        "Windows",
+        "macOS",
+        "Microsoft 365",
+        "Networking",
+        "Help Desk Support"
+      ]
+    },
+    {
+      "title": "BSidesSLC: CTF Challenge Developer",
+      "meta": "BSides Salt Lake City · Remote/On-site | Nov 2024 – Present · Utah",
+      "description": "Started as an event volunteer at regional BSides conferences (BSides Salt Lake City, BSides RedRocks), handling setup, teardown, and coordination, and progressed into building CTF challenges for the team. Designed scenarios across DFIR, packet analysis, OSINT, and blue team categories, grounded in real-world attack and incident response patterns, including challenge logic and flag validation to keep everything stable during live competition.",
+      "tags": ["CTF Design", "DFIR", "Packet Analysis", "OSINT", "Blue Team"]
+    },
+    {
+      "title": "Admissions Mentor",
+      "meta": "Southern Utah University · Part-time | Dec 2025 – Jul 2026 · Cedar City, UT",
+      "description": "Supported the full admissions lifecycle for prospective and current graduate and online students within SUU's Enrollment Management Department, serving as a university ambassador in a high-engagement, professional environment. Processed application materials against university, state, and federal compliance requirements, conducted outbound outreach, and maintained student records across Banner, CRM Slate, Google Workspace, and Slack.",
+      "tags": ["CRM Slate", "Banner", "Customer Service", "Data Management"]
+    },
+    {
+      "title": "Ambassador: OutreachMAD 2.0",
+      "meta": "Southern Utah University · Part-time | Dec 2023 – Mar 2025 · Cedar City, UT",
+      "description": "Participated in the Utah STEM Action Center's women-in-tech programme, delivering hands-on outreach activities for high school girls, analysing project data, updating websites, and presenting outcomes at conferences.",
+      "tags": [
+        "STEM Outreach",
+        "Web Development",
+        "Data Analysis",
+        "Community Outreach"
+      ]
+    },
+    {
+      "title": "Junior Web Developer",
+      "meta": "Phoenix Art · Internship | Feb 2023 – Jul 2023 · Ludhiana, PB",
+      "description": "Internship focused on front-end web development, building and maintaining web pages and applying problem-solving skills in a professional studio environment.",
+      "tags": ["HTML", "Web Development", "Problem Solving"]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Introduction to Emotion Expression and AI",
+      "url": "https://doi.org/10.1007/978-3-032-14778-3_1",
+      "authors": "Mankoo, Rajwinder Singh, Shivam Patel, Nikunj Tahilramani, Anantkumar Patil, Aditya Bhadouria, and Shadab Mazhar Roushan",
+      "publication": "In Emotion and Facial Recognition in Artificial Intelligence: Sustainable Multidisciplinary Perspectives and Applications · Springer · 2026",
+      "description": "Examines computational approaches to emotion recognition and generation using CNNs, RNNs, and transformer architectures, with emphasis on privacy, algorithmic bias, manipulation, accountability, and responsible AI."
+    },
+    {
+      "title": "Quantum Blind Computing for Privacy-Preserving Medical Diagnosis",
+      "url": "https://doi.org/10.1515/9783111264349-012",
+      "authors": "Aseri, Vinay, Arnav Dua, Rajwinder Singh Mankoo, and Harish Chowdhary",
+      "publication": "Chapter 12, Sustainable Blind Quantum Computing · De Gruyter · 2025",
+      "description": "Examines quantum blind computing for privacy-preserving medical data processing, including secure computation, quantum protocols, scalability, implementation challenges, and ethical considerations."
+    }
+  ],
+  "skills": [
+    {
+      "title": "Detection & SIEM",
+      "tools": [
+        "Wazuh",
+        "Sigma Rules",
+        "MITRE ATT&CK",
+        "Log Analysis",
+        "Threat Hunting",
+        "Splunk"
+      ]
+    },
+    {
+      "title": "Offensive security",
+      "tools": [
+        "Nmap",
+        "Metasploit",
+        "Burp Suite",
+        "BloodHound",
+        "Mimikatz",
+        "Responder"
+      ]
+    },
+    {
+      "title": "Networking",
+      "tools": [
+        "TCP/IP",
+        "Active Directory",
+        "DNS / DHCP",
+        "VLANs",
+        "Firewall Rules",
+        "Wireshark"
+      ]
+    },
+    {
+      "title": "Programming",
+      "tools": ["Python", "C / C++", "Go", "Java", "Bash", "PowerShell"]
+    },
+    {
+      "title": "Tools & platforms",
+      "tools": [
+        "Ghidra",
+        "Linux / Kali",
+        "Proxmox",
+        "Windows Server",
+        "Docker",
+        "Git"
+      ]
+    },
+    {
+      "title": "IT & systems administration",
+      "tools": [
+        "Systems Administration",
+        "Technical Support",
+        "Microsoft Windows",
+        "Network Troubleshooting",
+        "IT Infrastructure",
+        "CRM Software"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Security+",
+      "detail": "SY0-701",
+      "issuer": "CompTIA · Aug 2026"
+    },
+    {
+      "name": "CRTA",
+      "detail": "Certified Red Team Analyst",
+      "issuer": "CyberWarFare Labs · Mar 2026"
+    },
+    {
+      "name": "CSEDP",
+      "detail": "Certified Social Engineering Defense Practitioner",
+      "issuer": "The SecOps Group · Feb 2026"
+    },
+    {
+      "name": "Google IT Support Professional",
+      "detail": "5-course specialisation",
+      "issuer": "Google / Coursera · Feb 2026"
+    },
+    {
+      "name": "CNSP",
+      "detail": "Certified Network Security Practitioner",
+      "issuer": "The SecOps Group · Dec 2025"
+    },
+    {
+      "name": "ISC2 CC",
+      "detail": "Certified in Cybersecurity",
+      "issuer": "ISC2 · Jun 2026"
+    },
+    {
+      "name": "Python (Basic)",
+      "detail": "Certified",
+      "issuer": "HackerRank · Feb 2022"
+    },
+    {
+      "name": "Introduction to Cyber Security",
+      "detail": "Certified",
+      "issuer": "TryHackMe · Apr 2024"
+    }
+  ],
+  "achievements": [
+    {
+      "name": "NCAE Cyber Games",
+      "detail": "Most Valuable Teammate",
+      "issuer": "Southern Utah University Team · Apr 2026"
+    },
+    {
+      "name": "TryHackMe",
+      "detail": "Top 3% Platform Ranking",
+      "issuer": "TryHackMe Platform"
+    },
+    {
+      "name": "BSides CTF",
+      "detail": "1st & 2nd Place",
+      "issuer": "BSides Competitions"
+    }
+  ]
+}

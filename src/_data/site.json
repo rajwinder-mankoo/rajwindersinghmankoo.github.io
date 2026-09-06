@@ -4,13 +4,7 @@
   "pageTitle": "Rajwinder Singh Mankoo | Cybersecurity Portfolio",
   "metaDescription": "Rajwinder Singh Mankoo: cybersecurity student at Southern Utah University, detection engineer and purple team operator in training, CTF competitor, and published researcher.",
   "heroTag": "[ CYBERSECURITY STUDENT ]",
-  "typewriterPhrases": [
-    "Detection Engineer.",
-    "Purple Team Operator.",
-    "Security Engineer.",
-    "Offense-informed defense."
-  ],
-  "heroIntro": "Cybersecurity student with a minor in Computer Science, focused on detection engineering and purple team operations. I build enterprise-style infrastructure and SIEM pipelines from the ground up, using offensive security fundamentals to inform better defense, not the other way around.",
+  "heroIntro": "I\u2019m a cybersecurity student at Southern Utah University. I build security labs, investigate real logs, and document what I learn along the way.",
   "goalStatement": "Detection Engineer | Purple Team Operator",
   "email": "rajwindersinghmankoo@gmail.com",
   "github": "https://github.com/rajwinder-mankoo",

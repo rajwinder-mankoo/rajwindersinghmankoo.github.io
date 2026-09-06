@@ -1,4 +1,20 @@
+const { createHash } = require("node:crypto");
+const { readFileSync } = require("node:fs");
+
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addFilter("assetVersion", (path) =>
+    createHash("sha256").update(readFileSync(path)).digest("hex").slice(0, 10),
+  );
+  // Markdown dates represent calendar dates; keep local and CI builds identical.
+  eleventyConfig.addFilter("readableDate", (date) =>
+    new Intl.DateTimeFormat("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      timeZone: "UTC",
+    }).format(date),
+  );
+
   // Static assets pass straight through, unmodified — no build step needed for CSS/JS
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("src/script.js");

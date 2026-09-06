@@ -1,133 +1,87 @@
-/* ============================================================
-   script.js - Portfolio: Rajwinder Singh Mankoo
-   ============================================================ */
-
-/* ── Navbar: shrink on scroll & mobile toggle ─────────────── */
-(function () {
-  const navbar   = document.getElementById('navbar');
-  const toggle   = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-
-  // Shrink navbar when user scrolls down
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
-  }, { passive: true });
-
-  // Mobile hamburger toggle
-  toggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    toggle.classList.toggle('open', isOpen);
-    toggle.setAttribute('aria-expanded', isOpen);
-  });
-
-  // Close mobile nav when a link is clicked
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      toggle.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
+/* Progressive enhancements. All portfolio content is visible without JavaScript. */
+(() => {
+  const toggle = document.getElementById("navToggle");
+  const links = document.getElementById("navLinks");
+  const header = document.getElementById("navbar");
+  if (toggle && links) {
+    document.documentElement.classList.add("has-menu");
+    toggle.hidden = false;
+    const close = () => {
+      toggle.setAttribute("aria-expanded", "false");
+      links.classList.remove("open");
+    };
+    toggle.addEventListener("click", () => {
+      const open = toggle.getAttribute("aria-expanded") !== "true";
+      toggle.setAttribute("aria-expanded", String(open));
+      links.classList.toggle("open", open);
     });
-  });
-}());
-
-/* ── Typewriter effect in hero tagline ────────────────────── */
-(function () {
-  const el     = document.getElementById('typewriter');
-  const cursor = document.querySelector('.cursor');
-  if (!el) return;
-
-  // Phrases come from _data/site.json via the data-phrases attribute rendered
-  // into the template: this element is the single source of truth for hero
-  // copy, not a hardcoded array here. Fallback covers the case where the
-  // attribute is missing or malformed, so the page never breaks silently.
-  let phrases;
-  try {
-    phrases = JSON.parse(el.dataset.phrases || '[]');
-    if (!Array.isArray(phrases) || phrases.length === 0) throw new Error('empty');
-  } catch (e) {
-    phrases = ['Detection Engineer.', 'Purple Team Operator.'];
-  }
-
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReducedMotion) {
-    el.textContent = phrases[0];
-    return;
-  }
-
-  let phraseIdx = 0;
-  let charIdx   = 0;
-  let deleting  = false;
-  const TYPING_SPEED  = 65;
-  const DELETING_SPEED = 35;
-  const PAUSE_END     = 1800;
-  const PAUSE_START   = 400;
-
-  function tick () {
-    const current = phrases[phraseIdx];
-
-    if (!deleting) {
-      el.textContent = current.slice(0, ++charIdx);
-      if (charIdx === current.length) {
-        deleting = true;
-        setTimeout(tick, PAUSE_END);
-        return;
+    links.addEventListener("click", (event) => {
+      if (event.target.closest("a")) close();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (
+        event.key === "Escape" &&
+        toggle.getAttribute("aria-expanded") === "true"
+      ) {
+        close();
+        toggle.focus();
       }
-      setTimeout(tick, TYPING_SPEED);
-    } else {
-      el.textContent = current.slice(0, --charIdx);
-      if (charIdx === 0) {
-        deleting  = false;
-        phraseIdx = (phraseIdx + 1) % phrases.length;
-        setTimeout(tick, PAUSE_START);
-        return;
-      }
-      setTimeout(tick, DELETING_SPEED);
-    }
+    });
+    document.addEventListener("click", (event) => {
+      if (!header.contains(event.target)) close();
+    });
+    header.addEventListener("focusout", (event) => {
+      if (!header.contains(event.relatedTarget)) close();
+    });
+    window.matchMedia("(min-width: 1001px)").addEventListener("change", close);
   }
 
-  tick();
-}());
-
-/* ── Scroll-reveal: fade-in sections as they enter viewport ── */
-(function () {
-  const revealEls = document.querySelectorAll('.reveal');
-  if (!revealEls.length) return;
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // animate once
+  const tablist = document.querySelector(".case-tabs");
+  if (tablist) {
+    const tabs = [...tablist.querySelectorAll('[role="tab"]')];
+    const activate = (tab) => {
+      tabs.forEach((item) => {
+        const selected = item === tab;
+        item.setAttribute("aria-selected", String(selected));
+        item.tabIndex = selected ? 0 : -1;
+        document.getElementById(item.getAttribute("aria-controls")).hidden =
+          !selected;
+      });
+    };
+    tablist.hidden = false;
+    activate(tabs[0]);
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => activate(tab));
+      tab.addEventListener("keydown", (event) => {
+        let next;
+        if (event.key === "ArrowRight") next = tabs[(index + 1) % tabs.length];
+        if (event.key === "ArrowLeft")
+          next = tabs[(index + tabs.length - 1) % tabs.length];
+        if (event.key === "Home") next = tabs[0];
+        if (event.key === "End") next = tabs[tabs.length - 1];
+        if (next) {
+          event.preventDefault();
+          activate(next);
+          next.focus();
         }
       });
-    },
-    { threshold: 0.12 }
-  );
+    });
+  }
 
-  revealEls.forEach(el => observer.observe(el));
-}());
-
-/* ── Active nav link highlighting ─────────────────────────── */
-(function () {
-  const sections = document.querySelectorAll('section[id]');
-  const navAs    = document.querySelectorAll('#navLinks a');
-  if (!sections.length) return;
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute('id');
-          navAs.forEach(a => {
-            a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
-          });
-        }
-      });
-    },
-    { rootMargin: '-40% 0px -55% 0px' }
-  );
-
-  sections.forEach(s => observer.observe(s));
-}());
-
+  const toc = document.getElementById("article-toc");
+  if (toc) {
+    toc.closest("aside").hidden = false;
+    document.querySelectorAll(".writeup-body h2").forEach((heading, index) => {
+      if (!heading.id) heading.id = `section-${index + 1}`;
+      const link = document.createElement("a");
+      link.href = `#${heading.id}`;
+      link.textContent = heading.textContent;
+      toc.append(link);
+    });
+  }
+  document
+    .querySelectorAll("[data-year]")
+    .forEach((el) => (el.textContent = new Date().getFullYear()));
+  const print = document.getElementById("print-resume");
+  if (print) print.addEventListener("click", () => window.print());
+})();

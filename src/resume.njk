@@ -1,0 +1,16 @@
+---
+permalink: /resume/index.html
+title: Résumé
+summary: Education, experience, research, and technical skills of Rajwinder Singh Mankoo.
+---
+<!DOCTYPE html><html lang="en"><head>{% include "head.njk" %}</head><body>{% include "nav.njk" %}
+<main id="main" class="shell resume-page">
+<nav class="resume-actions" aria-label="Résumé actions"><a class="button button-red" href="/assets/rajwinder-mankoo-resume.pdf" download>Download PDF ↓</a><button class="button" id="print-resume" type="button">Print this page</button><a class="text-link" href="/assets/rajwinder-mankoo-resume.txt" download>Plain text ↓</a></nav>
+<div class="resume-document"><header><h1>{{ site.name }}</h1><p>Cybersecurity student · Detection engineering &amp; purple-team operations</p><p><a href="mailto:{{ site.email }}">{{ site.email }}</a> · <a href="{{ site.linkedin }}">LinkedIn ↗</a> · <a href="{{ site.github }}">GitHub ↗</a></p></header>
+<section><h2>Education</h2><h3>Southern Utah University</h3><p>B.S. Cybersecurity, minor in Computer Science</p><p class="resume-meta">August 2023 – April 2027 (expected) · Cedar City, UT</p></section>
+<section><h2>Experience</h2>{% for role in profile.experience %}<article><h3>{{ role.title }}</h3><p class="resume-meta">{{ role.meta }}</p><p>{{ role.description }}</p></article>{% endfor %}</section>
+<section><h2>Selected project</h2><h3>c0mpl1cated.labs / Wazuh SIEM</h3><p>Deployed a single-node SIEM on Proxmox, connected a Linux agent, and validated 57 events in a 24-hour window. Documented installation troubleshooting and default MITRE ATT&amp;CK mapping.</p><a class="text-link" href="/writeups/project-01-wazuh-siem/">Read the case study ↗</a></section>
+<section><h2>Certifications &amp; coursework</h2>{% for cert in profile.certifications %}<h3>{{ cert.name }}</h3><p>{{ cert.detail }} · {{ cert.issuer }}</p>{% endfor %}</section>
+<section><h2>Research</h2>{% for paper in profile.publications %}<h3><a href="{{ paper.url }}">{{ paper.title }} ↗</a></h3><p>{{ paper.publication }}</p>{% endfor %}</section>
+<section><h2>Recognition</h2>{% for item in profile.achievements %}<h3>{{ item.name }}</h3><p>{{ item.detail }} · {{ item.issuer }}</p>{% endfor %}</section>
+<section><h2>Technical skills</h2>{% for group in profile.skills %}<h3>{{ group.title }}</h3><p>{{ group.tools | join(' · ') }}</p>{% endfor %}</section></div></main>{% include "footer.njk" %}</body></html>

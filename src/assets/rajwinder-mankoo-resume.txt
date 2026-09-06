@@ -1,0 +1,57 @@
+Rajwinder Singh Mankoo
+Cybersecurity student | Detection engineering and purple-team operations
+rajwindersinghmankoo@gmail.com
+https://rajwindersinghmankoo.dev
+https://www.linkedin.com/in/rajwinder-mankoo/
+https://github.com/rajwinder-mankoo
+
+EDUCATION
+Southern Utah University — B.S. Cybersecurity, minor in Computer Science
+August 2023 – April 2027 (expected), Cedar City, UT
+
+EXPERIENCE
+Student IT Help Desk Technician — Southern Utah University
+July 2026 – Present
+Provide first-level hardware, software, and network support to students, faculty, and staff. Troubleshoot Windows, macOS, Microsoft 365, printers, and Wi-Fi. Document support requests and assist with deployment and imaging.
+
+CTF Challenge Developer — BSides Salt Lake City
+November 2024 – Present (volunteer and challenge-development involvement)
+Progressed from event volunteering to designing challenges across DFIR, packet analysis, OSINT, and blue-team categories, including challenge logic and flag validation.
+
+Admissions Mentor — Southern Utah University
+December 2025 – July 2026
+Processed application materials, maintained student records, and supported outreach using Banner, CRM Slate, and Google Workspace.
+
+Ambassador, OutreachMAD 2.0 — Southern Utah University
+December 2023 – March 2025
+Delivered hands-on STEM outreach, analyzed project data, updated websites, and presented outcomes at conferences.
+
+Junior Web Developer Intern — Phoenix Art
+February 2023 – July 2023
+Built and maintained front-end web pages in a professional studio environment.
+
+SELECTED PROJECT
+c0mpl1cated.labs — Wazuh SIEM
+Deployed a single-node manager, indexer, and dashboard on Proxmox. Connected a Linux agent and validated 57 events in a 24-hour window, including authentication activity and default MITRE ATT&CK mapping. Documented installation and agent-status troubleshooting.
+https://rajwindersinghmankoo.dev/writeups/project-01-wazuh-siem/
+
+CERTIFICATIONS
+CompTIA Security+ (SY0-701), August 2026
+ISC2 Certified in Cybersecurity, June 2026
+Certified Red Team Analyst, CyberWarFare Labs, March 2026
+Certified Social Engineering Defense Practitioner, The SecOps Group, February 2026
+Google IT Support Professional, February 2026
+Certified Network Security Practitioner, The SecOps Group, December 2025
+
+RESEARCH
+Co-author, Introduction to Emotion Expression and AI — Springer, 2026
+https://doi.org/10.1007/978-3-032-14778-3_1
+Co-author, Quantum Blind Computing for Privacy-Preserving Medical Diagnosis — De Gruyter, 2025
+https://doi.org/10.1515/9783111264349-012
+
+ACHIEVEMENTS
+NCAE Cyber Games — Most Valuable Teammate, SUU team, April 2026
+BSides CTF — 1st and 2nd place finishes
+
+TECHNICAL SKILLS
+Wazuh, log analysis, MITRE ATT&CK, Proxmox, Linux, Windows, networking, Python, Bash, PowerShell, Git

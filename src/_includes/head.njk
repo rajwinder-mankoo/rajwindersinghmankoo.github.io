@@ -1,0 +1,18 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0a0a0a" />
+<meta name="description" content="{{ summary or site.metaDescription }}" />
+<meta name="author" content="{{ site.name }}" />
+<title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.pageTitle }}{% endif %}</title>
+<link rel="canonical" href="https://rajwindersinghmankoo.dev{{ page.url }}" />
+<meta property="og:type" content="{% if title %}article{% else %}website{% endif %}" />
+<meta property="og:title" content="{{ title or site.pageTitle }}" />
+<meta property="og:description" content="{{ summary or site.metaDescription }}" />
+<meta property="og:url" content="https://rajwindersinghmankoo.dev{{ page.url }}" />
+<meta property="og:image" content="https://rajwindersinghmankoo.dev/assets/security-laptop-v2-social.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://rajwindersinghmankoo.dev/assets/security-laptop-v2-social.jpg" />
+<link rel="icon" type="image/png" href="/assets/favicon.png" />
+<link rel="preload" as="font" href="/assets/fonts/manrope-regular.woff2" type="font/woff2" crossorigin />
+<link rel="preload" as="font" href="/assets/fonts/manrope-bold.woff2" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/style.css?v={{ 'src/style.css' | assetVersion }}" />

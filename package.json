@@ -1,11 +1,12 @@
 {
   "name": "rajwindersinghmankoo-portfolio",
   "version": "1.0.0",
-  "description": "Portfolio site for rajwindersinghmankoo.dev — migrated from static HTML to Eleventy per ADR-WEB-001.",
+  "description": "Portfolio site for rajwindersinghmankoo.dev \u2014 migrated from static HTML to Eleventy per ADR-WEB-001.",
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "debug": "DEBUG=Eleventy* eleventy"
+    "debug": "DEBUG=Eleventy* eleventy",
+    "check": "node scripts/check-site.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0"
