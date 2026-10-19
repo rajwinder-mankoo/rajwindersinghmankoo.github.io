@@ -565,6 +565,15 @@ h2 em {
 .lab-social .text-link {
   flex-shrink: 0;
 }
+.lab-social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.article-end .text-link + .text-link {
+  margin-left: 28px;
+}
 /* Biography and career */
 .about-section {
   display: grid;
@@ -1201,6 +1210,9 @@ h2 em {
   }
   .lab-social {
     align-items: start;
+  }
+  .lab-social-links {
+    align-items: flex-start;
   }
   .research-item {
     gap: 35px;

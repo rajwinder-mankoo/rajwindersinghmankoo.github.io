@@ -48,3 +48,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Rebuild c0mpl1cated.me so it picks up new writeups and project changes.
+  # Set the LAB_SITE_DEPLOY_HOOK repository secret to the Cloudflare Pages deploy hook URL.
+  notify-lab-site:
+    needs: deploy
+    runs-on: ubuntu-latest
+    env:
+      HOOK: ${{ secrets.LAB_SITE_DEPLOY_HOOK }}
+    steps:
+      - name: Trigger c0mpl1cated.me rebuild
+        if: ${{ env.HOOK != '' }}
+        run: curl -fsS -X POST "$HOOK" > /dev/null

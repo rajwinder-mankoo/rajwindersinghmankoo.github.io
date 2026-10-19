@@ -54,7 +54,7 @@
       </div>
     </article>
     <details class="roadmap"><summary><span>Next in the lab</span><span class="summary-meta">4 planned projects <b aria-hidden="true">+</b></span></summary><div class="roadmap-grid">{% for lab in labs %}{% if lab.statusClass == 'status-pending' %}<article><span class="mono">Not started</span><h3>{{ lab.name | replace(' — ', ' / ') }}</h3><p>{{ lab.description }}</p></article>{% endif %}{% endfor %}</div></details>
-    <div class="lab-social"><div><h3>The lab, in progress.</h3><p>I share lab content at <strong>c0mpl1cated.labs</strong>, with posts designed in Figma.</p></div><a class="text-link" href="{{ site.instagram }}">Visit the Instagram journal <span aria-hidden="true">↗</span></a></div>
+    <div class="lab-social"><div><h3>The lab, in progress.</h3><p>I share lab content at <strong>c0mpl1cated.labs</strong>, with posts designed in Figma.</p></div><div class="lab-social-links"><a class="text-link" href="{{ site.labSite }}">Explore the lab at c0mpl1cated.me <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ site.instagram }}">Visit the Instagram journal <span aria-hidden="true">↗</span></a></div></div>
   </section>
 
   <section id="about" class="section shell about-section" aria-labelledby="about-title">
