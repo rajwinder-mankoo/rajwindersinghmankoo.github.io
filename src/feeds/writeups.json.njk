@@ -1,0 +1,7 @@
+---
+permalink: /feeds/writeups.json
+eleventyExcludeFromCollections: true
+---
+[{% for post in collections.writeups %}
+  {"title": {{ post.data.title | dump | safe }}, "summary": {{ post.data.summary | dump | safe }}, "date": "{{ post.date.toISOString() }}", "url": "{{ site.url }}{{ post.url }}"}{% if not loop.last %},{% endif %}{% endfor %}
+]
