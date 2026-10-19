@@ -5,13 +5,13 @@
     "icon": "🏗️",
     "status": "Foundation Stable",
     "statusClass": "status-active",
-    "description": "Enterprise network architecture, VLAN segmentation, naming conventions, virtualization standards, and a documented security baseline for the whole c0mpl1cated.labs environment, the foundation every other project builds on.",
+    "description": "Three standalone Proxmox VE nodes rebuilt from bare metal and managed from one dashboard. Remote access through Cloudflare Tunnel and Access with no open ports, key-only SSH, 2FA on every admin interface, and least-privilege API tokens throughout.",
     "tags": [
       "Proxmox",
-      "Networking",
-      "VLANs",
+      "Cloudflare Tunnel",
+      "Zero Trust",
       "Documentation"
-    ],
+    ],,
     "repo": null,
     "writeup": null
   },
